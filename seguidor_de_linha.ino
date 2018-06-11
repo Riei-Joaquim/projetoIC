@@ -200,9 +200,9 @@ void desvia(){
     digitalWrite(Motor_E1,HIGH);
     digitalWrite(Motor_E2,HIGH);
     delay(500);
-   //segue reto
   //esse laço prende o carro nas configuração de ir em linha reta até ele achar a linha preta
   while(digitalRead(inPin)==HIGH){
+   //segue reto
    digitalWrite(Motor_D1,LOW);
    digitalWrite(Motor_D2,HIGH);
    digitalWrite(Motor_E1,LOW);
@@ -210,6 +210,7 @@ void desvia(){
    analogWrite(Motor_EV,100);
    analogWrite(Motor_DV,122);
    delay(15);
+   //freio para impedir que o carro ganhe muita velocidade
    digitalWrite(Motor_D1,HIGH);
    digitalWrite(Motor_D2,HIGH);
    digitalWrite(Motor_E1,HIGH);
