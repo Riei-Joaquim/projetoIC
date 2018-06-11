@@ -28,7 +28,9 @@ void setup(){
 }
 void loop(){
   //função de achar a linha
+  /*ela vai setar os motores para fazer o carro rotacionar no proprio eixo*/
   if(digitalRead(inPin)!= LOW){
+    //Esse laço vai prender o carro na configuração de rotacionar até ele achar a linha
     while(digitalRead(inPin)!=LOW){
       digitalWrite(Motor_D1,LOW);
       digitalWrite(Motor_D2,HIGH);
@@ -37,6 +39,7 @@ void loop(){
       analogWrite(Motor_EV,50);
       analogWrite(Motor_DV,50);
     }
+    //Assim que o carrinho achar o preto, o laço acima para e o carrinho é setado com as configurações de freio dos motores
     digitalWrite(Motor_D1,HIGH);
     digitalWrite(Motor_D2,HIGH);
     digitalWrite(Motor_E1,HIGH);
@@ -49,9 +52,10 @@ void loop(){
       if(distancia()<=20){
         desvia();
       }
-      /*os laços while a seguir faram o carro andar um milisegundo com uma roda e outro milisegundo com uma roda mais veloz para
-      frente e a outra com uma velocidade mais baixa, para traz para evitar que o "S" que o carro faz seja muito brusco, alternadamente 
-      isso faz o carinho alternar entre a borda esquerda e direita da fita preta */
+      /*os laços while a seguir faram o carro andar um milisegundo com uma roda para frente com a outra em ponto morto
+      e outro milisegundo com uma roda mais veloz para frente e a outra com uma velocidade mais baixa, para traz para evitar que
+      o "S" que o carro faz seja muito brusco, alternadamente, isso faz o carinho alternar entre a borda esquerda 
+      e direita da fita preta */
       while(digitalRead(inPin)==LOW){
         digitalWrite(Motor_D1,LOW);
         digitalWrite(Motor_D2,HIGH);
