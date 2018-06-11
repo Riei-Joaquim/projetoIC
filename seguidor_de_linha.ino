@@ -130,21 +130,21 @@ void desvia(){
     digitalWrite(Motor_E1,HIGH);
     digitalWrite(Motor_E2,HIGH);
     delay(500);
-//    gira
+    //gira
     digitalWrite(Motor_D1,LOW);
     digitalWrite(Motor_D2,HIGH);
     digitalWrite(Motor_E1,LOW);
     digitalWrite(Motor_E2,LOW);
     analogWrite(Motor_DV,122);
     delay(300);
-     //freia
+    //freia
    digitalWrite(Motor_D1,HIGH);
    digitalWrite(Motor_D2,HIGH);
    digitalWrite(Motor_E1,HIGH);
    digitalWrite(Motor_E2,HIGH);
    delay(500);
    
-//    vai reto
+    //vai reto
    digitalWrite(Motor_D1,LOW);
    digitalWrite(Motor_D2,HIGH);
    digitalWrite(Motor_E1,LOW);
@@ -152,7 +152,7 @@ void desvia(){
    analogWrite(Motor_EV,100);
    analogWrite(Motor_DV,122);
    delay(500);
-   
+   //freia
    digitalWrite(Motor_D1,HIGH);
    digitalWrite(Motor_D2,HIGH);
    digitalWrite(Motor_E1,HIGH);
@@ -180,13 +180,13 @@ void desvia(){
    analogWrite(Motor_EV,100);
    analogWrite(Motor_DV,122);
    delay(400);
- 
+   //freio
    digitalWrite(Motor_D1,HIGH);
    digitalWrite(Motor_D2,HIGH);
    digitalWrite(Motor_E1,HIGH);
    digitalWrite(Motor_E2,HIGH);
    delay(500);
-     //gira
+   //gira
    digitalWrite(Motor_D1,LOW);
    digitalWrite(Motor_D2,LOW);
    digitalWrite(Motor_E1,LOW);
@@ -222,21 +222,21 @@ void desvia(){
    digitalWrite(Motor_E1,HIGH);
    digitalWrite(Motor_E2,HIGH);
    delay(500);
-   
+   // seta carro para da uma pequena ré para ajustar a horientação do carro após ele achar a linha
    digitalWrite(Motor_D1,HIGH);
    digitalWrite(Motor_D2,LOW);
    digitalWrite(Motor_E1,HIGH);
    digitalWrite(Motor_E2,LOW);
    analogWrite(Motor_DV,122);
    delay(150);
-        //freia
+    //freia
    digitalWrite(Motor_D1,HIGH);
    digitalWrite(Motor_D2,HIGH);
    digitalWrite(Motor_E1,HIGH);
    digitalWrite(Motor_E2,HIGH);
    delay(500);
    
-   //    gira
+   //gira
     digitalWrite(Motor_D1,LOW);
     digitalWrite(Motor_D2,HIGH);
     digitalWrite(Motor_E1,LOW);
