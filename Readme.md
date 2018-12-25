@@ -4,10 +4,10 @@
 
 **Membros do Grupo**
 - Cavaleiros do arduino:
-    - [RIEI JOAQUIM MATOS RODRIGUES](https://github.com/Riei-Joaquim)</br> (rjmr)
-    - [PEDRO NOGUEIRA COUTINHO](https://github.com/PedroNC18)</br> (pnc)
-    - VICTOR XIMENES CARNEIRO DE OLIVEIRA (vxco)
-    - WASHINGTON IGOR DOS SANTOS SILVA (wiss)
-    - FERNANDO DO REGO PESSOA DE MACEDO NETO (frpmn)
-    - DANIEL RODRIGUES PERAZZO (drp)
+    - [RIEI JOAQUIM MATOS RODRIGUES](https://github.com/Riei-Joaquim)</br>
+    - [PEDRO NOGUEIRA COUTINHO](https://github.com/PedroNC18)</br>
+    - VICTOR XIMENES CARNEIRO DE OLIVEIRA
+    - WASHINGTON IGOR DOS SANTOS SILVA
+    - FERNANDO DO REGO PESSOA DE MACEDO NETO
+    - DANIEL RODRIGUES PERAZZO
 
